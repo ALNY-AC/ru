@@ -24,6 +24,7 @@ export class AppComponent {
   <ru-panel title="始终显示" shadow="always"></ru-panel>
   <ru-panel title="鼠标进入显示" shadow="hover"></ru-panel>
   <ru-panel title="始终不显示" shadow="never"></ru-panel>
+  <ru-panel></ru-panel>
   `;
   demo3 = `
   <ru-input prefix-icon="fa fa-calendar" suffix-icon="fa fa-angle-down" (suffix-click)="test('后')" (prefix-click)="test('前')">
@@ -33,7 +34,17 @@ export class AppComponent {
   <ru-input></ru-input>
   `
   demo3Str = 'ru-input';
-
+  demo4List = [
+    { title: '海底两万里', name: '凡尔纳' },
+    { title: '神秘岛', name: '凡尔纳' },
+    { title: '童年', name: '高尔基' },
+    { title: '骆驼祥子', name: '鲁迅' },
+  ];
+  demo4HeadList = [
+    { name: 'id' },
+    { name: '名字' },
+    { name: '作者' },
+  ]
   test(e) {
     console.warn(e);
   }

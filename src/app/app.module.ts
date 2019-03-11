@@ -9,10 +9,12 @@ import { FormsModule } from '@angular/forms';
 import { HtmlToTextPipe } from './pipe/html-to-text.pipe';
 
 
+
 @NgModule({
   declarations: [
     AppComponent,
     HtmlToTextPipe,
+
   ],
   imports: [
     BrowserModule,

@@ -1,3 +1,8 @@
-<p>
-  table works!
-</p>
+<table border="1">
+  <thead>
+    <ng-content select="[slot='thead']"></ng-content>
+  </thead>
+  <tbody>
+    <ng-content></ng-content>
+  </tbody>
+</table>

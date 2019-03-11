@@ -1,20 +1,7 @@
+<h1 class="text-center">Ru Component</h1>
+
+
 <div class="box">
-
-    <ru-panel title="输入框">
-        <div class="demo-3">
-            <h4>基础用法</h4>
-            <h5>{{demo3Str}}</h5>
-            <ru-input [(model)]="demo3Str" prefix-icon="fa fa-calendar" suffix-icon="fa fa-angle-down"
-                (suffix-click)="test('后')" (prefix-click)="test('前')">
-            </ru-input>
-            <ru-input [(model)]="demo3Str" suffix-icon="fa fa-angle-down"></ru-input>
-            <ru-input [(model)]="demo3Str" prefix-icon="fa fa-calendar"></ru-input>
-            <ru-input [(model)]="demo3Str"></ru-input>
-        </div>
-        <pre class="hljs"><code [innerHTML]="demo3 | htmlToText" class="html"></code></pre>
-    </ru-panel>
-
-
     <ru-panel title="按钮">
         <div class="demo-1">
             <h4>基础用法</h4>
@@ -31,6 +18,8 @@
             <br>
             <h4>圆角样式</h4>
             <ru-button [round]="true">圆角按钮</ru-button>
+            <ru-button type="green" [round]="true">圆角按钮</ru-button>
+            <ru-button type="green" [plain]="true" [round]="true">圆角按钮</ru-button>
             <br>
             <br>
             <h4>禁用样式</h4>
@@ -39,6 +28,20 @@
             <ru-button [disabled]="true" type="green" [plain]="true" [round]="true">绿色</ru-button>
         </div>
         <pre class="hljs"><code [innerHTML]="demo1 | htmlToText" class="html"></code></pre>
+    </ru-panel>
+
+    <ru-panel title="输入框">
+        <div class="demo-3">
+            <h4>基础用法</h4>
+            <h5>{{demo3Str}}</h5>
+            <ru-input [(model)]="demo3Str" prefix-icon="fa fa-calendar" suffix-icon="fa fa-angle-down"
+                (suffix-click)="test('后')" (prefix-click)="test('前')">
+            </ru-input>
+            <ru-input [(model)]="demo3Str" suffix-icon="fa fa-angle-down"></ru-input>
+            <ru-input [(model)]="demo3Str" prefix-icon="fa fa-calendar"></ru-input>
+            <ru-input [(model)]="demo3Str"></ru-input>
+        </div>
+        <pre class="hljs"><code [innerHTML]="demo3 | htmlToText" class="html"></code></pre>
     </ru-panel>
     <ru-panel title="面板">
 
@@ -54,9 +57,37 @@
         <ru-panel title="始终显示" shadow="always"></ru-panel>
         <ru-panel title="鼠标进入显示" shadow="hover"></ru-panel>
         <ru-panel title="始终不显示" shadow="never"></ru-panel>
+        <h4>头部</h4>
+        <ru-panel></ru-panel>
 
         <pre class="hljs"><code [innerHTML]="demo2 | htmlToText" class="html"></code></pre>
 
+    </ru-panel>
+
+    <ru-panel title="表格">
+        <div class="demo-4">
+            <h4>基础用法</h4>
+            <table class="table">
+                <tr>
+                    <th *ngFor="let item of demo4HeadList">{{item.name}}</th>
+                    <th>操作</th>
+                </tr>
+
+                <tr *ngFor="let item of demo4List;index as i">
+                    <td>{{i+1}}</td>
+
+                    <td>
+                        <div>{{item.title}}</div>
+                    </td>
+                    <td>{{item.name}}</td>
+                    <td>
+                        <ru-button type="green"><i class="fa fa-trash"></i>删除</ru-button>
+                    </td>
+                </tr>
+            </table>
+
+        </div>
+        <p>给任意表格加上<kbd>.table</kbd>类，即可拥有样式</p>
     </ru-panel>
 
 </div>

@@ -6,14 +6,34 @@ import { PanelComponent } from './panel/panel.component';
 import { CommonModule } from '@angular/common';
 import { InputComponent } from './input/input.component';
 import { TableComponent } from './table/table.component';
-import { TableColumnComponent } from './table-column/table-column.component';
+import { ThComponent } from './th/th.component';
+import { TdComponent } from './td/td.component';
+import { TrComponent } from './tr/tr.component';
 
 @NgModule({
-  declarations: [RuComponent, ButtonComponent, PanelComponent, InputComponent, TableComponent, TableColumnComponent],
+  declarations: [
+    RuComponent,
+    ButtonComponent,
+    PanelComponent,
+    InputComponent,
+    TableComponent,
+    ThComponent,
+    TdComponent,
+    TrComponent
+  ],
   imports: [
     FormsModule,
     CommonModule
   ],
-  exports: [RuComponent, ButtonComponent, PanelComponent, InputComponent]
+  exports: [
+    RuComponent,
+    ButtonComponent,
+    PanelComponent,
+    InputComponent,
+    TableComponent,
+    ThComponent,
+    TdComponent,
+    TrComponent
+  ]
 })
 export class RuModule { }
