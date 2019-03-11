@@ -1,7 +1,7 @@
 # RuibeiComponent
 
 ## 安装
-`$ npm i ru-component -s`
+`$ npm i ru-component -S`
 
 ## 导入
 >src>app>app.module.ts
