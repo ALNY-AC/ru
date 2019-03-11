@@ -9,6 +9,7 @@ export class ButtonComponent implements OnInit {
   @Input() round: boolean = false;
   @Input() plain: boolean = false;
   @Input() disabled: boolean = false;
+  @Input() ghost: boolean = false;
   @Input() type: string = 'default';
 
   ngOnInit() {
