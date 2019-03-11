@@ -1,5 +1,6 @@
 # RuibeiComponent
 
+[npm](https://www.npmjs.com/package/ru-component)
 ## 安装
 `$ npm i ru-component -S`
 
