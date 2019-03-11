@@ -1,0 +1,12 @@
+<div [class]="'ru-panel ru-panel-'+shadow">
+  <div class="ru-panel-head">
+    <span *ngIf="title" class="ru-panel-head-title">{{title}}</span>
+    <ng-content *ngIf="!title" select="[slot=head]"></ng-content>
+  </div>
+  <div class="ru-panel-body">
+    <ng-content></ng-content>
+  </div>
+  <div class="ru-panel-footer">
+    <ng-content select="[slot=footer]"></ng-content>
+  </div>
+</div>

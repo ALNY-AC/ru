@@ -1,0 +1,27 @@
+.ru-input {
+    border: solid 1px #DFE6E8;
+    border-radius: 4px;
+    display: inline-block;
+    line-height: 1;
+    padding: 0;
+    margin: 0;
+    padding: 6px 11px;
+    box-sizing: border-box;
+    * {
+        box-sizing: border-box;
+    }
+    input {
+        border: none;
+        outline: none;
+        padding: 0;
+        line-height: 0;
+    }
+    .prefix-icon {
+        margin-right: 7px;
+        display: inline-block;
+    }
+    .suffix-icon {
+        margin-left: 7px;
+        display: inline-block;
+    }
+}

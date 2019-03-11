@@ -134,6 +134,41 @@
           }
         }
       }
+    },
+    "ru": {
+      "root": "projects/ru",
+      "sourceRoot": "projects/ru/src",
+      "projectType": "library",
+      "prefix": "ru",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-ng-packagr:build",
+          "options": {
+            "tsConfig": "projects/ru/tsconfig.lib.json",
+            "project": "projects/ru/ng-package.json"
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/ru/src/test.ts",
+            "tsConfig": "projects/ru/tsconfig.spec.json",
+            "karmaConfig": "projects/ru/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/ru/tsconfig.lib.json",
+              "projects/ru/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
     }
   },
   "defaultProject": "ruibei-component"

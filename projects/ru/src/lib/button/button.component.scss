@@ -1,0 +1,43 @@
+.ru-button {
+    border: solid 1px transparent;
+    outline: none;
+    line-height: normal;
+    border-radius: 4px;
+    user-select: none;
+    background-color: transparent;
+    font-size: 12px;
+    padding: 6px 18px;
+    margin: 0;
+    display: inline-block;
+    cursor: pointer;
+    &__round {
+        border-radius: 20px;
+    }
+    &__default {
+        border-color: #d8dce5;
+        background-color: #fff;
+    }
+    &__green {
+        border-color: #01A89F;
+        background-color: #01A89F;
+        color: #fff;
+        &.ru-button__plain {
+            color: #01A89F;
+            background-color: #EBFFFE;
+            border-color: #A7E1DE;
+        }
+    }
+    &__plain {
+        background-color: #fff;
+    }
+    &__text {
+        border: none;
+        color: #01A89F;
+    }
+    &[disabled] {
+        opacity: 0.5;
+        &:hover {
+            cursor: not-allowed;
+        }
+    }
+}

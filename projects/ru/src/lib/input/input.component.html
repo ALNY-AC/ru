@@ -1,0 +1,9 @@
+<div class="ru-input">
+  <div (click)="prefixIconClick.emit($event)" class="prefix-icon" *ngIf="prefixIcon">
+    <i [class]="prefixIcon"></i>
+  </div>
+  <input [ngModel]="model" (ngModelChange)="handleInput($event)" type="text">
+  <div (click)="suffixIconClick.emit($event)" class="suffix-icon" *ngIf="suffixIcon">
+    <i [class]="suffixIcon"></i>
+  </div>
+</div>

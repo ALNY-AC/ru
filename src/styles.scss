@@ -1,1 +1,38 @@
 /* You can add global styles to this file, and also import other style files */
+
+@import "highlight.js/styles/rainbow.css";
+html,
+body {
+    padding: 0;
+    margin: 0;
+    color: #333;
+}
+
+body {
+    background-color: #f6f6f6;
+}
+
+pre {
+    line-height: 1.8;
+    font-family: Consolas, 'Courier New', monospace;
+    letter-spacing: 1px;
+    border-radius: 5px;
+    box-shadow: 1px 1px 20px rgba($color: #000000, $alpha: 0.3);
+    padding: 0;
+    margin: 20px 0;
+    &::-webkit-scrollbar {
+        /*滚动条整体样式*/
+        width: 5px;
+        /*高宽分别对应横竖滚动条的尺寸*/
+        height: 5px;
+    }
+    &::-webkit-scrollbar-thumb {
+        /*滚动条里面小方块*/
+        background: #343434;
+        border-radius: 5px;
+    }
+    &::-webkit-scrollbar-track {
+        /*滚动条里面轨道*/
+        // background: #474949;
+    }
+}
