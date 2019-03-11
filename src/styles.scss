@@ -37,60 +37,8 @@ pre {
     }
 }
 
-.table {
-    border-collapse: collapse;
-    text-align: center;
-    font-size: 14px;
-    width: 100%;
-    box-sizing: border-box;
-    border: solid 1px #EAF2F5;
-    * {
-        box-sizing: border-box;
-    }
-    tr {
-        &:nth-child(even) {
-            background-color: #F0F4F3;
-        }
-    }
-    th,
-    td {
-        padding: 10px;
-        border: solid 1px #EAF2F5;
-    }
-}
-
-.text-left {
-    text-align: left;
-}
-
-.text-right {
-    text-align: right;
-}
-
-.text-center {
-    text-align: center;
-}
-
-// Classes
-.pull-left {
-    float: left !important;
-}
-
-.pull-right {
-    float: right !important;
-}
-
-.clearfix {
-    &:before,
-    &:after {
-        content: " ";
-        display: table;
-    }
-    &:after {
-        clear: both;
-    }
-}
-
+@import "app/style/table.scss";
+@import "app/style/tool.scss";
 kbd {
     background-color: #474949;
     padding: 2px 4px;
