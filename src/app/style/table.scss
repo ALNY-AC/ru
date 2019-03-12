@@ -19,3 +19,26 @@
         border: solid 1px #EAF2F5;
     }
 }
+
+.demo-table {
+    border-collapse: collapse;
+    text-align: left;
+    font-size: 14px;
+    width: 100%;
+    box-sizing: border-box;
+    box-shadow: 1px 1px 25px rgba($color: #000000, $alpha: 0.1);
+    * {
+        box-sizing: border-box;
+    }
+    tr {
+        &:nth-child(even) {}
+    }
+    th {
+        background-color: #EFF2F7;
+    }
+    th,
+    td {
+        padding: 10px;
+        border-bottom: solid 1px #EAF2F5;
+    }
+}

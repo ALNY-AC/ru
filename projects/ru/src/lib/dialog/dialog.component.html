@@ -1,0 +1,21 @@
+<div #dialog class="ru-dialog" *ngIf="show">
+    <div class="ru-dialog-mask" (click)="maskClose?hide():''"></div>
+    <div class="ru-dialog-panel" [style.width]="width">
+        <div class="ru-dialog-head">
+            <div class="ru-dialog-head-title">{{title}}
+                <i (click)="hide()" class=" close-icon" title="关闭">
+                    <svg class="close" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 52">
+                        <path class="line" fill="none" d="M17.36,34.736l17.368-17.472" />
+                        <path class="line" fill="none" d="M34.78,34.684L17.309,17.316" />
+                    </svg>
+                </i>
+            </div>
+        </div>
+        <div class="ru-dialog-body">
+            <ng-content></ng-content>
+        </div>
+        <div class="ru-dialog-footer">
+            <ng-content select="[slot=footer]"></ng-content>
+        </div>
+    </div>
+</div>

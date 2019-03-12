@@ -1,0 +1,50 @@
+<h1>ru-dialog 对话框</h1>
+<h2>基本用法</h2>
+
+<ru-button (click)="show1=!show1">打开对话框({{show1}})</ru-button>
+<ru-dialog width="800px" title="对话框" [(show)]="show1">
+    这里是内容
+    <div slot="footer" class="text-right">
+        <ru-button type="green">确定</ru-button>
+        <ru-button (click)="show1=false">关闭</ru-button>
+    </div>
+</ru-dialog>
+
+<hr>
+
+<h2>内嵌表格</h2>
+<ru-button (click)="show2=!show2">显示表格({{show2}})</ru-button>
+<ru-dialog width="800px" title="对话框" [(show)]="show2">
+    <table class="table">
+        <tr>
+            <th *ngFor="let item of demo4HeadList">{{item.name}}</th>
+            <th>操作</th>
+        </tr>
+        <tr *ngFor="let item of demo4List;index as i">
+            <td>{{i+1}}</td>
+            <td>
+                <div>{{item.title}}</div>
+            </td>
+            <td>{{item.name}}</td>
+            <td>
+                <ru-button type="green"><i class="fa fa-trash"></i>删除</ru-button>
+            </td>
+        </tr>
+    </table>
+    <div slot="footer" class="text-right">
+        <ru-button type="green">确定</ru-button>
+        <ru-button (click)="show2=false">关闭</ru-button>
+    </div>
+</ru-dialog>
+<pre class="hljs"><code [innerHTML]="demo2 | htmlToText" class="html"></code></pre>
+<hr>
+
+<h2>属性</h2>
+<table class="demo-table">
+    <tr>
+        <th *ngFor="let col of fields">{{col}}</th>
+    </tr>
+    <tr *ngFor="let row of propList">
+        <td *ngFor="let col of row">{{col}}</td>
+    </tr>
+</table>

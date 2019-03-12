@@ -1,0 +1,11 @@
+<div class="demo-3">
+  <h1>输入框</h1>
+  <h5>{{demo3Str}}</h5>
+  <ru-input [(model)]="demo3Str" prefix-icon="fa fa-calendar" suffix-icon="fa fa-angle-down" (suffix-click)="test('后')"
+    (prefix-click)="test('前')">
+  </ru-input>
+  <ru-input [(model)]="demo3Str" suffix-icon="fa fa-angle-down"></ru-input>
+  <ru-input [(model)]="demo3Str" prefix-icon="fa fa-calendar"></ru-input>
+  <ru-input [(model)]="demo3Str"></ru-input>
+  <pre class="hljs"><code [innerHTML]="demo3 | htmlToText" class="html"></code></pre>
+</div>

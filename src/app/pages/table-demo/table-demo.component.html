@@ -1,0 +1,22 @@
+<div class="demo-4">
+  <h1>表格</h1>
+  <table class="table">
+    <tr>
+      <th *ngFor="let item of demo4HeadList">{{item.name}}</th>
+      <th>操作</th>
+    </tr>
+
+    <tr *ngFor="let item of demo4List;index as i">
+      <td>{{i+1}}</td>
+
+      <td>
+        <div>{{item.title}}</div>
+      </td>
+      <td>{{item.name}}</td>
+      <td>
+        <ru-button type="green"><i class="fa fa-trash"></i>删除</ru-button>
+      </td>
+    </tr>
+  </table>
+  <p>给任意表格加上<kbd>.table</kbd>类，即可拥有样式</p>
+</div>

@@ -9,6 +9,9 @@ import { TableComponent } from './table/table.component';
 import { ThComponent } from './th/th.component';
 import { TdComponent } from './td/td.component';
 import { TrComponent } from './tr/tr.component';
+import { DialogComponent } from './dialog/dialog.component';
+import { SelectComponent } from './select/select.component';
+import { OptionComponent } from './option/option.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +22,10 @@ import { TrComponent } from './tr/tr.component';
     TableComponent,
     ThComponent,
     TdComponent,
-    TrComponent
+    TrComponent,
+    DialogComponent,
+    SelectComponent,
+    OptionComponent
   ],
   imports: [
     FormsModule,
@@ -33,7 +39,10 @@ import { TrComponent } from './tr/tr.component';
     TableComponent,
     ThComponent,
     TdComponent,
-    TrComponent
+    TrComponent,
+    DialogComponent,
+    SelectComponent,
+    OptionComponent
   ]
 })
 export class RuModule { }
