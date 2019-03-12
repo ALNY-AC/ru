@@ -13,7 +13,10 @@ export class InputDemoComponent implements OnInit {
   <ru-input suffix-icon="fa fa-angle-down"></ru-input>
   <ru-input prefix-icon="fa fa-calendar"></ru-input>
   <ru-input></ru-input>
-  `
+  `;
+  test(e) {
+    console.warn(e);
+  }
   constructor() { }
 
   ngOnInit() {

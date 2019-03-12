@@ -21,9 +21,7 @@ export class AppComponent {
   constructor(private location: PlatformLocation) {
 
   }
-  test(e) {
-    console.warn(e);
-  }
+
   ngOnInit() {
     this.activeNav = this.location.pathname;
   }
