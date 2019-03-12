@@ -1,0 +1,28 @@
+{
+  "name": "ru-component",
+  "version": "0.0.6",
+  "peerDependencies": {
+    "@angular/common": "^7.2.0",
+    "@angular/core": "^7.2.0"
+  },
+  "main": "bundles/ru.umd.js",
+  "module": "fesm5/ru.js",
+  "es2015": "fesm2015/ru.js",
+  "esm5": "esm5/ru.js",
+  "esm2015": "esm2015/ru.js",
+  "fesm5": "fesm5/ru.js",
+  "fesm2015": "fesm2015/ru.js",
+  "typings": "ru.d.ts",
+  "metadata": "ru.metadata.json",
+  "sideEffects": false,
+  "dependencies": {
+    "tslib": "^1.9.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ALNY-AC/origin-vue.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ALNY-AC/origin-vue/issues"
+  }
+}
