@@ -1,6 +1,6 @@
 {
   "name": "ru-component",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "peerDependencies": {
     "@angular/common": "^7.2.0",
     "@angular/core": "^7.2.0"
@@ -20,9 +20,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/ALNY-AC/origin-vue.git"
+    "url": "https://github.com/ALNY-AC/ru-component.git"
   },
   "bugs": {
-    "url": "https://github.com/ALNY-AC/origin-vue/issues"
+    "url": "https://github.com/ALNY-AC/ru-component/issues"
   }
 }
